@@ -6,15 +6,19 @@
     %link(href="/stylesheets/application.css" rel="stylesheet" type="text/css")
   %body
     %div#header
+    
     %div#container
       %h1 Wave64 <span>Alpha</span>
       %p.intro Wave64 adds cross-domain <a href="http://soundcloud.com" target="_blank">SoundCloud</a> waveform image support for your HTML5 canvas hacks.
+      
       %h2 Explanation
       %p If you've developed with HTML5 <code>canvas</code> before, you know that accessing and manipulating images from different domains or origins is prohibited. However, a quick search will present several ways of dealing with this problem. One of these solutions is a simple jQuery plugin called <a href="http://www.maxnov.com/getimagedata/" target="_blank">$.getImageData</a> developed by <a href="http://twitter.com/maxnovakovic" target="_blank">@maxnovakovic</a>. A proxy server converts the image into a base64 encoded data URL and returns the image as a JSON object. The image can then be included and edited within <code>canvas</code>. Magic? You know it.
       %p So what's Wave64? It's a slimmed down version of this idea made specifically for <strong>you</strong>: SoundCloud developer! We've open-sourced and hosted it right here for your hacking needs. Hell, even I'm using it to build the next version of <a href="http://stratus.sc" target="_blank">Stratus</a>... so, how do <em>you</em> use it?
+      
       %h2 Usage
       %p Wave64 exists as a single endpoint you pass a SoundCloud waveform url and callback to (preferably via jQuery.) It will return a JSON object you can manipulate in <code>canvas</code>. Check it out:
       %script(src="https://gist.github.com/2004387.js?file=wave64.js")
+      
       %h2 Feedback
       %p Got a suggestion? Found a bug? Using Wave64 on your project? Let me know <a href="http://twitter.com/leemartin" target="_blank">@leemartin</a>
       %p.copyright Inspired by <a href="http://twitter.com/maxnovakovic" target="_blank">Max Novakovic</a>. Built by <a href="http://twitter.com/leemartin" target="_blank">Lee Martin</a>. Fork the shit out of it on <a href="https://github.com/soundcloudlabs/wave64" target="_blank">Github</a>.
