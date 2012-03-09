@@ -46,6 +46,27 @@ code, pre {
 code {
   padding: 0 0.25em; }
 
+.gist {
+  color: #999999 !important;
+  margin: 10px 0; }
+  .gist .gist-file {
+    border: 0 !important; }
+    .gist .gist-file .gist-data {
+      background-color: whitesmoke !important;
+      border: 0 !important; }
+      .gist .gist-file .gist-data span.c1 {
+        color: black; }
+      .gist .gist-file .gist-data span.s2, .gist .gist-file .gist-data span.s1, .gist .gist-file .gist-data span.nb, .gist .gist-file .gist-data span.mi {
+        color: #999999; }
+    .gist .gist-file .gist-meta {
+      background-color: white !important; }
+      .gist .gist-file .gist-meta a {
+        color: black !important; }
+      .gist .gist-file .gist-meta a:nth-child(1) {
+        color: #ff6600 !important; }
+      .gist .gist-file .gist-meta a:nth-child(2) {
+        display: none; }
+
 p.intro {
   color: #333333;
   font-size: 24px;
