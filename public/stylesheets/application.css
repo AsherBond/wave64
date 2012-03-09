@@ -55,7 +55,7 @@ code {
       background-color: whitesmoke !important;
       border: 0 !important; }
       .gist .gist-file .gist-data span.c1 {
-        color: black; }
+        color: #ff6600; }
       .gist .gist-file .gist-data span.s2, .gist .gist-file .gist-data span.s1, .gist .gist-file .gist-data span.nb, .gist .gist-file .gist-data span.mi {
         color: #999999; }
     .gist .gist-file .gist-meta {
