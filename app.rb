@@ -15,7 +15,7 @@ get '/' do
 end
 
 # Wave64 endpoint
-get '/w*' do
+get '/w*' do  
   # Set Content/Type as JSON
   content_type :json
   
@@ -34,7 +34,7 @@ get '/w*' do
   height    = meta.h
   
   # Create data prefix
-  prefix = "data:image/#{ type.downcase }/;base64,"
+  prefix = "data:image/#{ type.downcase };base64,"
   
   # Base64 encode the image
   base64 = Base64.encode64(image)
