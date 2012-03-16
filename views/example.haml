@@ -18,11 +18,12 @@
           client_id: "YOUR_CLIENT_ID"
         });
         SC.get("/tracks/33820987", function(track) {
-          $.wave64(track.waveform_url, height, width, [255, 102, 0], function(data) {
+          $.wave64(track.waveform_url, height, width, [255, 255, 255], function(data) {
             context.putImageData(data, 0, 0);
           });
         });
       });
     
   %body
-    %canvas#waveform(style="width:600px;height:100px")
+    %div(style="background:black;width:550px;height:300px")
+      %canvas#waveform(style="width:550px;height:300px")
