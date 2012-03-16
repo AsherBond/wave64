@@ -45,6 +45,10 @@ code, pre
 
 code
   padding: 0 .25em
+  
+strong
+  color: #F60
+  font-weight: normal
 
 .gist
   color: #999 !important
@@ -54,10 +58,13 @@ code
     .gist-data
       background-color: whitesmoke !important
       border: 0 !important
-      span.c1
-        color: #F60
-      span.s2, span.s1, span.nb, span.mi
+      
+      // span.s2, span.s1, span.nb, span.mi, span.nt, span.na, span.s, span.kd, span.k
+      //   color: #999
+      span
         color: #999
+      span.c, span.c1
+        color: #F60
     .gist-meta
       background-color: white !important
       a

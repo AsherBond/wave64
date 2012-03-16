@@ -1,0 +1,28 @@
+!!! 5
+%html
+  %head
+    %title SoundCloud $.wave64 Example
+    %script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+    %script(src="http://connect.soundcloud.com/sdk.js")
+    %script(src="/jquery.wave64.js")
+    
+    :javascript
+      $(document).ready(function() {
+        canvas = $("#waveform")[0];
+        context = canvas.getContext("2d");
+        width = context.canvas.clientWidth;
+        height = context.canvas.clientHeight;
+        canvas.setAttribute("width", width);
+        canvas.setAttribute("height", height);
+        SC.initialize({
+          client_id: "YOUR_CLIENT_ID"
+        });
+        SC.get("/tracks/33820987", function(track) {
+          $.wave64(track.waveform_url, height, width, [255, 102, 0], function(data) {
+            context.putImageData(data, 0, 0);
+          });
+        });
+      });
+    
+  %body
+    %canvas#waveform(style="width:600px;height:100px")

@@ -46,6 +46,10 @@ code, pre {
 code {
   padding: 0 0.25em; }
 
+strong {
+  color: #ff6600;
+  font-weight: normal; }
+
 .gist {
   color: #999999 !important;
   margin: 10px 0; }
@@ -54,10 +58,10 @@ code {
     .gist .gist-file .gist-data {
       background-color: whitesmoke !important;
       border: 0 !important; }
-      .gist .gist-file .gist-data span.c1 {
-        color: #ff6600; }
-      .gist .gist-file .gist-data span.s2, .gist .gist-file .gist-data span.s1, .gist .gist-file .gist-data span.nb, .gist .gist-file .gist-data span.mi {
+      .gist .gist-file .gist-data span {
         color: #999999; }
+      .gist .gist-file .gist-data span.c, .gist .gist-file .gist-data span.c1 {
+        color: #ff6600; }
     .gist .gist-file .gist-meta {
       background-color: white !important; }
       .gist .gist-file .gist-meta a {

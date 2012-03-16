@@ -14,6 +14,11 @@ get '/' do
   haml :index
 end
 
+# Example
+get '/example' do
+  haml :example
+end
+
 # Wave64 endpoint
 get '/w*' do  
   # Set Content/Type as JSON
